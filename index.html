@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+<body>
+    <h1>Simple Interest Calculator</h1>
+    <p>This is a simple calulator using formula I = (P * R * T)/100</p>
+    <div class="container"> 
+        <div class="simple_interest">
+            <p>Calculate SI Here!</p>
+            <label for="Principle">
+                <input type="number" id="principle" placeholder="Enter Amount" />
+            </label>
+            <label for="Rate">
+                <input type="number" id="rate" placeholder="Rate" />
+            </label>
+            <label for="Time">
+                <input type="number" id="time" placeholder="Time in years" />
+            </label>
+            <button class="calculate">Calculate</button> <!-- onclick="calculateSI()" -->
+            <p id="output"></p>
+        </div>
+        <!-- <div class="compound_interest">
+            <p>Calculate CI Here!!</p>
+            <label for="Principle">
+                <input type="text" placeholder="Enter Amount" />
+            </label>
+            <label for="Rate">
+                <input type="number" placeholder="Rate" />
+            </label>
+            <label for="Time">
+                <input type="number" placeholder="Time in years" />
+            </label>
+            <button class="calculate">Calculate</button>
+            <div id="output"></div>
+        </div> -->
+    </div>
+    <script src="./index.js">
+    </script>
+</body>
+</html>

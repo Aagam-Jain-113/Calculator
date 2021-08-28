@@ -1,0 +1,58 @@
+label{
+    display: block;
+    margin-top: 1rem;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+input{
+    height: 1.5rem;
+    padding: 0 0.5rem;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid #00acee;
+}
+
+.calculate{
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    background: #00acee;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;/* flex-end flex-start */
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* flex-direction: row; */
+}
+
+.simple_interest,.compound_interest{
+    width: 400px;
+    /* padding: 4% 5%; */
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    border: 5px solid red;
+    box-shadow: 5px 5px 10px rgb(218, 12, 12,0.5);
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 1rem;
+    }
+    .simple_interest,.compound_interest{
+        width: 200px;
+    }
+}
